@@ -15,8 +15,12 @@ public class TextOfradioBtn {
 	List<WebElement>ele_list=driver.findElements(By.xpath("//input[@type='radio']"));//identifying all the radio btn
 
 	for (int i = 0; i <ele_list.size(); i++) {
+		
 		String nameofRadioBtn=ele_list.get(i).getAttribute("value");
-		System.out.println("Radio Btn Name is : "+nameofRadioBtn);
+		
+		
+		System.out.println(" radio Btn name is : "+nameofRadioBtn);
+
 	}
 	
 	System.out.println(driver.findElement(By.id("home")).getText());
